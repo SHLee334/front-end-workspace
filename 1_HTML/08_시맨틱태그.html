@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>시맨틱태그</title>
+  </head>
+  <body>
+    <h2>레이아웃 1 : div</h2>
+    <div id="header">
+      <h1>LOGO</h1>
+      <div>GNB</div>
+    </div>
+    <!-- div#main or #main | id 는 # -->
+    <div id="main">
+      <div class="main_image">Main Image</div>
+      <!-- .cont_wrap | class 는 . -->
+      <div class="cont_wrap">
+        <div class="content">
+          <p>content</p>
+          <span>Content Image 1</span>
+        </div>
+        <div class="content">
+          <p>content</p>
+          <span>Content Image 2</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="section">
+      <div class="section_content">Section</div>
+      <div class="asdie">Ads</div>
+    </div>
+
+    <div id="footer">Footer</div>
+
+    <h2>레이아웃 2 : Semantic tag</h2>
+    <header>
+      <h1>LOGO</h1>
+      <nav>GNB</nav>
+    </header>
+    <!-- div#main or #main | id 는 # -->
+    <main>
+      <div class="main_image">Main Image</div>
+      <!-- .cont_wrap | class 는 . -->
+      <div class="cont_wrap">
+        <div class="content">
+          <p>content</p>
+          <span>Content Image 1</span>
+        </div>
+        <div class="content">
+          <p>content</p>
+          <span>Content Image 2</span>
+        </div>
+      </div>
+    </main>
+
+    <section>
+      <article>Section</article>
+      <aside>Ads</aside>
+    </section>
+
+    <footer>Footer</footer>
+  </body>
+</html>

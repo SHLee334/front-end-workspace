@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 실습</title>
+  </head>
+  <body>
+    <h1>주문하기</h1>
+    <form action="" name="order_form" method="post">
+      <label for="name">고객명 : </label>
+      <input type="name" id="name" required />
+
+      <br /><br />
+
+      <label for="tel">전화번호 : </label>
+      <input type="tel" id="tel" required />
+
+      <br /><br />
+
+      <label for="email">E-mail : </label>
+      <input type="email" id="email" required />
+
+      <br /><br />
+
+      <fieldset>
+        <legend>피자 사이즈</legend>
+        <label
+          ><input type="radio" name="pizzaSize" value="S" required /> Small
+        </label>
+        <br />
+        <br />
+
+        <label
+          ><input type="radio" name="pizzaSize" value="M" required /> Medium
+        </label>
+        <br /><br />
+
+        <label
+          ><input type="radio" name="pizzaSize" value="L" required /> Large
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>토핑 선택</legend>
+        <label
+          ><input type="checkbox" name="topping" value="bacon" />
+          베이컨
+        </label>
+        <br />
+        <br />
+
+        <label
+          ><input type="checkbox" name="topping" value="cheese" /> 치즈
+        </label>
+        <br />
+        <br />
+
+        <label
+          ><input type="checkbox" name="topping" value="onion" /> 양파
+        </label>
+        <br />
+        <br />
+
+        <label
+          ><input type="checkbox" name="topping" value="mushroon" />
+          버섯
+        </label>
+      </fieldset>
+
+      <br />
+
+      <label for="deliveryTime">희망 배송 시간 : </label>
+      <input type="time" id="deliveryTime" required />
+
+      <br />
+      <br />
+
+      <p>배송 시 요청사항 :</p>
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="내용을 입력하세요"
+        style="resize: none"
+      ></textarea>
+      <br /><br />
+      <input type="submit" value="주문하기" onclick="alert('피자 주문 완료')" />
+    </form>
+  </body>
+</html>
