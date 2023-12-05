@@ -1,0 +1,26 @@
+/* 박스 모델 */
+/* width, height */
+.size-test {
+  height: 200px;
+  background-color: cadetblue;
+}
+
+#fixed-size {
+  width: 200px;
+}
+
+#variable-size {
+  width: 50%;
+}
+
+/* display */
+.display {
+  width: 150px;
+  height: 50px;
+  background-color: antiquewhite;
+  margin: 10px;
+}
+
+.display-inline {
+  display: inline;
+}
