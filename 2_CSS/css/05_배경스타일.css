@@ -1,0 +1,12 @@
+/* background-color */
+#bc {
+  background-color: lightblue;
+}
+
+/* background-clip */
+.div-test {
+  background-color: yellow;
+  border: 10px dashed black;
+  padding: 20px;
+  margin: 20px;
+}
