@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: coral;
+}
+
+.profile-card {
+  background-color: white;
+  width: 300px;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: coral;
+  width: 90%;
+  height: 50px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
