@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(coral, white);
+  height: 100vh;
+  padding: 20px;
+}
+
+.profile-card {
+  /* background-color: white;*/
+  border: 4px solid white;
+  width: 350px;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-card img {
+  width: 150px;
+  height: 150px;
+  /* object-fit: cover [사진 비율 유지하면서 정사각형] */
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-card h1 {
+  font-size: 1.5rem;
+  color: gray;
+  margin-top: 5px;
+}
+
+.profile-card a {
+  display: block;
+  color: white;
+  /*  background-color: coral; */
+  border: 2px solid white;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 15px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.profile-card a:hover {
+  /* background-color: yellowgreen;*/
+  background-color: white;
+  color: black;
+}
