@@ -1,0 +1,82 @@
+header {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  /* header 는 height 값을 준다 (밀어내야 해서) */
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header nav {
+  margin-right: 20px;
+  display: flex;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  height: 60px;
+  line-height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+header nav a:hover {
+  /*color: tomato;*/
+  background-color: black;
+  color: white;
+}
+
+main {
+  padding-top: 60px;
+}
+main section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+main section p {
+  text-align: center;
+  width: 70%;
+  line-height: 1.5rem;
+}
+
+/* main section:nth-child() 로 section 지정할수도 있음 */
+#section1 {
+  background-color: red;
+}
+#section2 {
+  background-color: purple;
+}
+#section3 {
+  background-color: yellow;
+}
+
+.topButton {
+  position: fixed;
+  /* position 성질로 바꾸면 inline 이어도 width, height 수정 가능 */
+  right: 10px;
+  bottom: 10px;
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+}
