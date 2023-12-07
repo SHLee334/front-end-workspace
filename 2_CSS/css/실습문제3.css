@@ -1,0 +1,87 @@
+header {
+  position: fixed;
+  width: 400px;
+  height: 100%;
+  background-image: url(/resources/background.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.header-blackbox {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.header-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content h1 {
+  font-size: 5rem;
+  border-bottom: 2px solid white;
+  padding-bottom: 15px;
+  width: 56%;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.header-content nav {
+  margin-bottom: 100px;
+}
+
+.header-content a {
+  color: white;
+  display: block;
+  font-size: 1.8rem;
+  margin: 20px;
+}
+
+main {
+  padding-left: 400px;
+}
+
+main section h2 {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+main section img {
+  width: 50%;
+  margin: auto;
+  display: block;
+  padding-bottom: 20px;
+}
+
+main section p {
+  width: 90%;
+  margin: auto;
+  display: block;
+  line-height: 1.8rem;
+}
+
+#top {
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
