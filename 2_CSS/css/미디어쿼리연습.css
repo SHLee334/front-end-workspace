@@ -1,0 +1,25 @@
+h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.inline-block {
+  display: inline-block;
+}
+#sec1 {
+  background-color: lightblue;
+}
+
+#sec2 {
+  background-color: yellow;
+}
+
+@media screen and (min-width: 500px) {
+  #sec1 {
+    width: 40%;
+  }
+
+  #sec2 {
+    width: 60%;
+  }
+}
