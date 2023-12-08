@@ -1,0 +1,365 @@
+@media screen and (min-width: 0px) {
+  header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 35px;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-top: 5px;
+  }
+
+  header nav a {
+    margin: 20px;
+    color: gray;
+  }
+
+  .main-headtext {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-headicon {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: grid;
+  }
+
+  .ourjob {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+  }
+
+  .ourjob:nth-child(1) {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .ourjob:nth-child(2) {
+    grid-row: 1/2;
+    grid-column: 2/2;
+  }
+
+  main section h2 {
+    font-size: 3rem;
+    margin-bottom: 13px;
+  }
+  main section h3 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+
+  main section div p {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  #design {
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #develop {
+    background-color: orangered;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #support {
+    background-color: lightseagreen;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #host {
+    background-color: lightskyblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  .article {
+    margin: 5px;
+  }
+  .article img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .aside {
+    margin: 5px;
+    display: block;
+  }
+
+  .aside img {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 35px;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-top: 5px;
+  }
+
+  header nav a {
+    margin: 20px;
+    color: gray;
+  }
+
+  .main-headtext {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-headicon {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    display: grid;
+  }
+
+  .ourjob {
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+  }
+
+  .ourjob:nth-child(1) {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .ourjob:nth-child(2) {
+    grid-row: 1/2;
+    grid-column: 2/2;
+  }
+
+  main section h2 {
+    font-size: 3rem;
+    margin-bottom: 13px;
+  }
+  main section h3 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+
+  main section div p {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  #design {
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #develop {
+    background-color: orangered;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #support {
+    background-color: lightseagreen;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #host {
+    background-color: lightskyblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  .article {
+    margin: 5px;
+  }
+  .article img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .aside {
+    margin: 5px;
+    display: block;
+  }
+
+  .aside img {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 35px;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-top: 5px;
+  }
+
+  header nav a {
+    margin: 20px;
+    color: gray;
+  }
+
+  .main-headtext {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-headicon {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ourjob {
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+  }
+
+  main section h2 {
+    font-size: 3rem;
+    margin-bottom: 13px;
+  }
+  main section h3 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+
+  main section div p {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  #design {
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #develop {
+    background-color: orangered;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #support {
+    background-color: lightseagreen;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #host {
+    background-color: lightskyblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h4 {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  .article {
+    margin: 5px;
+  }
+  .article img {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .aside {
+    margin: 5px;
+    display: block;
+  }
+
+  .aside img {
+    width: 30%;
+  }
+}
