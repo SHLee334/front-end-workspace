@@ -24,7 +24,7 @@
   gap: 10px;
 
   /* 5. grid-auto-rows */
-  /* grid-auto-rows: minmax(200px, auto); */
+  /* 6. justify-items, align-items */
 }
 
 .item {
