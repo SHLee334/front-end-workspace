@@ -2,6 +2,9 @@ h2 {
   font-size: 1.4rem;
   font-weight: bold;
 }
+p {
+  width: 100%;
+}
 
 .inline-block {
   display: inline-block;
@@ -16,10 +19,10 @@ h2 {
 
 @media screen and (min-width: 500px) {
   #sec1 {
-    width: 40%;
+    width: 50%;
   }
 
   #sec2 {
-    width: 60%;
+    width: 50%;
   }
 }
