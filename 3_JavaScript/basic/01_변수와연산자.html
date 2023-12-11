@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 출력
+      //   document.write(111);
+      //   window.console.log(222);
+      //   alert(333);
+    </script>
+    <script src="script.js"></script>
+    <!-- <script
+      src="https://kit.fontawesome.com/4602e82315.js"
+      crossorigin="anonymous"
+    ></script> -->
+  </head>
+  <body>
+    <!-- <i class="fa-solid fa-gamepad"></i> -->
+
+    <h1>변수</h1>
+    <p>어떠한 값을 저장하는 공간</p>
+    <!-- var, const, let -->
+    <script>
+      // var 는 옛날 방식, 거의 사용 X
+      var varA = 100; // var 변수 = 값;
+      console.log(varA);
+      varA = "ㅋㅋㅋ";
+      console.log(varA); // 출력결과 : ㅋㅋㅋ
+
+      // 상수 - 값을 수정할 수 없다. (자주 사용, 수정못하게 막는 용도)
+      const constB = 200; // const 변수 = 값;
+      console.log(constB); // 출력결과 : 200
+      /*constB = 300;*/ //Uncaught TypeError: Assignment to constant variable.
+
+      // 변수 - 값을 수정할 수 있다. (가끔 사용)
+      let letC = 300;
+      console.log(letC);
+      letC = "zzz";
+      console.log(letC);
+
+      // typeof : 데이터 타입 확인
+      console.log(typeof constB); //number
+      console.log(typeof letC); //string
+    </script>
+
+    <!-- 기본 데이터 타입 -->
+    <!-- 문자열 -->
+    <script>
+      let message = "'안녕' 이라고 말해";
+      message = '"안녕" 이라고 말해';
+      console.log(message);
+      console.log(message[1]); // 안
+      console.log(message.length); // 11
+
+      console.log("누군가에게", message);
+      console.log("누군가에게 " + message);
+      console.log(`누군가에게 ${message}`);
+
+      const name = "기린이";
+      const age = 2;
+
+      console.log(`안녕? 내 이름은 ${name}이고, 나이는 ${age}살`);
+    </script>
+
+    <!-- 숫자 -->
+    <script>
+      const num1 = 10;
+      const num2 = 3;
+      console.log(num1 + num2);
+      console.log(num1 - num2);
+      console.log(num1 * num2);
+      console.log(num1 / num2);
+      console.log(num1 % num2);
+      console.log(num1 ** num2); // ** : 제곱
+
+      // 문자열 -> 숫자 변환
+      console.log(typeof "100"); // string
+      console.log(typeof Number("100")); // number
+      console.log(Number("Hello")); // 출력: NaN
+
+      // 숫자 -> 문자열 변환
+      console.log(typeof 100); // number
+      console.log(typeof String(100)); // string
+
+      // 실수 -> 정수
+      console.log(parseInt(1.8)); // 소수점 아래 잘라버림, 출력 : 1
+    </script>
+
+    <!-- undefined(자바스크립트만 있음), null -->
+    <script>
+      let test;
+      console.log(test); // 출력 : undefined - 정의되지 않음
+
+      test = null;
+      console.log(test); // 출력 : null - 아무것도 없음
+    </script>
+
+    <!-- Boolean과 비교연산자 -->
+    <script>
+      let num3 = 100;
+      let num4 = 200;
+      console.log(true);
+      console.log(false);
+      console.log(num3 < num4);
+      console.log(num3 <= num4);
+      console.log(typeof (num3 > num4));
+
+      num4 = 100;
+      num4 = "100";
+      console.log(num3 == num4);
+      console.log(num3 != num4);
+      //   데이터 타입까지 체크
+      console.log(num3 === num4); // ===
+      console.log(num3 !== num4); // !==
+
+      // 다른 자료형 -> Boolean
+      // false : 0, NaN, "", null, undefined
+      // 나머지는 true
+      console.log(Boolean(0)); // false
+      console.log(Boolean(1)); // true
+    </script>
+
+    <!-- 논리 연산자 -->
+    <script>
+      const a = 100;
+      const b = 200;
+
+      console.log(a < 200 && a == 100); // && : 그리고 / a가 200보다 작으면서 100이랑 같나? true
+      console.log(a > 200 && a == 100); // false
+
+      console.log(a > 200 || a == 100); // || : 또는
+      console.log(a > 200 || a != 100);
+
+      // ! : 아니다(not)
+      console.log(!true); // false
+      console.log(!false); // true
+      console.log(!!(a > b)); // false
+    </script>
+  </body>
+</html>
