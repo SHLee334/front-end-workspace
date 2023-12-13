@@ -55,19 +55,16 @@
       // 배열 하나 생성
       // 안에서 조건을 걸어서 자기 자신을 만나는 데까지만 나누는 계산!
       // 자기자신으로 나누어지는 수까지 true가 없을 경우 <- 저 배열에 추가
+      // console.log(i, j, i % j == 0);
 
-      // 아직 못풀었습니당.. 계속 해보겠습니다
       const decimal = [];
       for (let i = 1; i <= 10; i++) {
         for (let j = 1; j <= i; j++) {
-          // console.log(i, j, i % j == 0);
-          if ((i % j == 0) = true) {
-            decimal[i] = i;
-            break;
+          if (i % j == 0) {
+            console.log(i);
           }
-          if ((i % j == 0) = false) continue;
+          if (i % j != 0) continue;
         }
-        console.log(decimal);
       }
 
       console.log("----------------------------");
@@ -80,6 +77,11 @@
       for (let i = 0; i < nums2.length; i++) {
         console.log(nums2[i] * 2);
       }
+      console.log("---------함수 사용-----------");
+      const answer2 = nums2.map(function (data) {
+        return data * 2;
+      });
+      console.log(answer2);
       console.log("----------------------------");
     </script>
 
@@ -93,6 +95,12 @@
       }
       console.log("총합 : " + total2);
       console.log("평균 : " + total2 / nums3.length);
+      console.log("---------함수 사용-----------");
+      const answer3 = nums3.reduce(function (accumulator, data) {
+        return accumulator + data;
+      });
+      console.log("총합 : " + answer3);
+      console.log("평균 : " + answer3 / nums3.length);
       console.log("----------------------------");
     </script>
 
@@ -106,6 +114,8 @@
         c1[i] = a1[i] * b1[i];
       }
       console.log(c1);
+      console.log("---------함수 사용-----------");
+
       console.log("----------------------------");
     </script>
 
