@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  margin-top: 30px;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 30px;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.btn {
+  margin: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+#btn1 {
+  font-weight: bold;
+  background-color: hotpink;
+}
+#btn2 {
+  font-weight: bold;
+  color: hotpink;
+  background-color: darkslateblue;
+}
