@@ -71,7 +71,7 @@ main section p {
   right: 10px;
   bottom: 10px;
   width: 80px;
-  height: 0px;
+  height: 80px;
   background-color: black;
   display: flex;
   justify-content: center;
