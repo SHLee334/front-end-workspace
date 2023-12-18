@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>정규표현식 실습문제</title>
+    <link rel="stylesheet" href="./css/실습문제4.css" />
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <ul style="list-style-type: none">
+          <li>
+            <label
+              >* 아이디 : <input type="text" id="userId" />
+              <p id="waringId">
+                첫글자는 반드시 영문자로, 그리고 영문자, 숫자 포함하여 총
+                4~12자로 입력하시오.
+              </p>
+            </label>
+          </li>
+          <li>
+            <label
+              >* 비밀번호 : <input type="text" id="userPwd" />
+              <p id="waringPwd">
+                영문자, 숫자, 특수문자 포함하여 총 8~15자로 입력하시오.
+              </p></label
+            >
+          </li>
+
+          <li>
+            <label
+              >* 비밀번호 확인 : <input type="text" id="pwdCheck" />
+              <p id="waringPwd2">위의 비밀번호화 일치하게 입력하시오.</p></label
+            >
+          </li>
+          <li>
+            <label
+              >* 이름 : <input type="text" id="name" />
+              <p id="waringName">
+                한글로만 이루어져야되며 2글자 이상으로 입력하시오.
+              </p></label
+            >
+          </li>
+          <li>
+            <label
+              >* 이메일 : <input type="text" id="email" />
+              <p id="waringEmail">이메일 형식에 맞춰서 입력하시오.</p></label
+            >
+          </li>
+          <li>
+            <label
+              >* 취미 :
+              <input type="text" placeholder="축구, 농구, 야구, 독서 등"
+            /></label>
+          </li>
+          <li>
+            <label
+              >* 거주지 :
+              <select name="" id="">
+                <optgroup>
+                  <option value="">서울</option>
+                  <option value="">인천</option>
+                  <option value="">안산</option>
+                  <option value="">수원</option>
+                  <option value="">안양</option>
+                </optgroup>
+              </select>
+            </label>
+          </li>
+        </ul>
+        <button id="finish">회원가입</button>
+        <button id="cancle">취소</button>
+      </fieldset>
+    </form>
+    <script src="./js/실습문제4.js"></script>
+  </body>
+</html>
