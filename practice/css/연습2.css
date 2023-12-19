@@ -1,0 +1,27 @@
+img {
+  width: 100px;
+}
+
+header {
+  width: 400px;
+  height: 100vh;
+  background-color: lightblue;
+  position: fixed;
+  background-image: url(../../resources/background.jpg);
+  text-align: center;
+}
+
+header nav a {
+  display: flex;
+  flex-direction: column;
+}
+header h1 {
+  margin-top: 60px;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+main {
+  margin-left: 400px;
+  padding: 30px 20px;
+}
