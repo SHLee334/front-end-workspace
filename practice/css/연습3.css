@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  margin: 20px;
+}
+
+form {
+  padding: 30px;
+  border: solid 1px black;
+  width: 500px;
+}
+form input {
+  margin: 10px 0;
+}
+form button {
+  margin-top: 10px;
+}
