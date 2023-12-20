@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입 폼 연습</title>
+    <!-- reset.css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- style css 연결 -->
+    <link rel="stylesheet" href="./css/연습4.css" />
+    <script
+      src="https://kit.fontawesome.com/4602e82315.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>회원가입</h1>
+    </header>
+
+    <main>
+      <form action="" onsubmit="return validate()">
+        <label for="userName"><i class="fa-solid fa-user"></i> 이름 : </label>
+        <input type="text" id="userName" name="userName" />
+        <p>한글로 두글자 이상 입력하시오</p>
+        <br />
+        <!-- <label for="userPhone"
+          >* 전화번호 : <input type="text" class="userPhone" id="userPhone"
+        /></label>
+        <p>'-'를 포함하여 입력하시오</p>
+        <br />
+        <label for="userID"
+          >* 아이디 : <input type="text" class="userID" name="userID"
+        /></label>
+        <p>영어 대소문자 밑 숫자를 사용해 6-12자로 입력하시오</p>
+        <br />
+        <label for="userPwd"
+          >* 비밀번호 : <input type="password" class="userPwd" name="userPwd" />
+        </label>
+        <p>영어 대소문자 밑 특수문자를 사용해 8-15자로 입력하시오</p>
+        <br />
+        <label for="userPwdCheck"
+          >* 비밀번호 확인 :
+          <input type="password" class="userPwdCheck" id="userPwdCheck"
+        /></label>
+        <p>동일한 비밀번호를 입력하시오</p>
+        <br />
+        <label for=""
+          >* 성별 :
+          <select name="gender" id="gender">
+            <optgroup>
+              <option selected>----</option>
+              <option value="man">남성</option>
+              <option value="woman">여성</option>
+            </optgroup>
+          </select></label
+        >
+        <p>성별을 고르시오</p>
+        <br /> -->
+        <div class="btn">
+          <button type="submit">회원 가입</button>
+          <button type="reset">&nbsp;취소&nbsp;</button>
+        </div>
+      </form>
+    </main>
+
+    <!-- js 연결 -->
+    <script src="./js/연습4.js"></script>
+  </body>
+</html>
