@@ -1,0 +1,43 @@
+header {
+  background-color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+header nav a {
+  color: black;
+}
+body {
+  background: lightyellow;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  background-color: white;
+  border: 3px dashed black;
+  width: 500px;
+  margin: auto;
+  padding: 40px;
+}
+input {
+  margin-bottom: 5px;
+}
+label {
+  font-weight: bold;
+}
+p {
+  margin-bottom: 8px;
+  margin-left: 13px;
+  font-size: 0.8rem;
+  color: gray;
+}
+select {
+  margin-bottom: 10px;
+}
