@@ -1,0 +1,61 @@
+header {
+  width: 350px;
+  height: 100vh;
+  background-image: url(/resources/media4.jpg);
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+header::after {
+  background-color: black;
+  width: 350px;
+  height: 100vh;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  z-index: -1;
+}
+header h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+  text-underline-offset: 20px;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+}
+header nav a {
+  margin: 20px 0;
+  color: white;
+  font-size: 1.5rem;
+}
+
+main {
+  margin-left: 350px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main form {
+  border: 2px dashed black;
+  width: 500px;
+  padding: 20px 15px;
+}
+main form div input {
+  margin-bottom: 5px;
+}
+main form div p {
+  margin-left: 20px;
+  color: grey;
+  margin-bottom: 5px;
+}

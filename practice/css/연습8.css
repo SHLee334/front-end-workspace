@@ -1,0 +1,48 @@
+header {
+  width: 400px;
+  height: 100vh;
+  background-image: url(/resources/pubao.jpg);
+  background-position: center;
+  position: fixed;
+}
+header::after {
+  width: 400px;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  opacity: 0.5;
+  z-index: -1;
+}
+main {
+  height: 100vh;
+  background-color: blanchedalmond;
+  margin-left: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main form {
+  background-color: white;
+  border: 2px dashed orangered;
+  padding: 30px 20px;
+}
+input,
+p {
+  margin-bottom: 10px;
+}
+p {
+  margin-left: 18.5px;
+  font-size: 0.9rem;
+  color: grey;
+}
+.btn {
+  text-align: center;
+}
+button {
+  margin-top: 15px;
+  background-color: white;
+  border: 1px dashed black;
+}
