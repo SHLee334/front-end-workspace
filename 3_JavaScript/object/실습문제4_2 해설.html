@@ -23,10 +23,22 @@
         color: #999;
         margin-left: 12px;
       }
+      form div img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      #image {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
     <form action="" onsubmit="return validate()">
+      <div id="image">
+        <img src="/resources/pizza.jpg" alt="" />
+      </div>
       <div>
         <label for="userId">* 아이디 : </label>
         <input type="text" id="userId" name="userId" />
