@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+      }
+      form {
+        border: 1px solid #ccc;
+        padding: 8px;
+      }
+      form div {
+        margin-bottom: 10px;
+      }
+      form span {
+        display: block;
+        color: #999;
+        margin-left: 12px;
+      }
+      form div img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      #image {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" onsubmit="return validate()">
+      <div id="image">
+        <img src="/resources/pizza.jpg" alt="" />
+      </div>
+      <div>
+        <label for="userId">* 아이디 : </label>
+        <input type="text" id="userId" name="userId" />
+        <span>
+          첫글자는 반드시 영문자로, 그리고 영문자, 숫자 포함하여 총 4~12자로
+          입력하시오.
+        </span>
+      </div>
+      <div>
+        <label for="userPwd">* 비밀번호 : </label>
+        <input type="password" id="userPwd" name="userPwd" />
+        <span>영문자, 숫자, 특수문자 포함하여 총 8~15자로 입력하시오.</span>
+      </div>
+      <div>
+        <label for="pwdEqual">* 비밀번호 확인 : </label>
+        <input type="password" id="pwdEqual" />
+        <span>위의 비밀번호와 일치하게 입력하시오.</span>
+      </div>
+      <div>
+        <label for="userName">* 이름 : </label>
+        <input type="text" id="userName" name="userName" />
+        <span>한글로만 이루어져야되며 2글자 이상으로 입력하시오.</span>
+      </div>
+      <div>
+        <label for="email">* 이메일 : </label>
+        <input type="text" id="email" name="email" />
+        <span>이메일 형식에 맞춰서 입력하시오.</span>
+      </div>
+      <div>
+        <label for="hobby">* 취미 : </label>
+        <input
+          type="text"
+          id="hobby"
+          name="hobby"
+          placeholder="축구, 농구, 야구, 독서 등"
+        />
+      </div>
+      <div>
+        <label for="addr">* 거주지 : </label>
+        <select name="addr" id="addr">
+          <option value="seoul">서울</option>
+          <option value="gyeonggi">경기</option>
+          <option value="incheon">인천</option>
+        </select>
+      </div>
+      <button type="submit">회원가입</button>
+      <button type="reset">취소</button>
+    </form>
+
+    <script>
+      // 정규표현식을 생성해 입력값 비교하는 함수
+      function userIdCheck() {
+        const regExp = /[a-zA-Z][a-zA-Z0-9]{3,11}/;
+        return regExp.test(userId.value);
+      }
+      function userPwdCheck() {
+        const regExp = /^(?=.*[a-zA-Z0-9])(?=.*[~!@#$%^&*]).{8,15}$/;
+        return regExp.test(userPwd.value);
+      }
+      function emailCheck() {
+        const regExp = /^\w@\w\.\w$/;
+        return regExp.test(email.value);
+      }
+
+      // 입력값 실시간으로 경고하는 함수 생성
+      function valueCheck(e, check, message) {
+        if (check) {
+          e.target.nextElementSibling.style.color = "green";
+          e.target.nextElementSibling.innerHTML = "OK!";
+        } else {
+          e.target.nextElementSibling.style.color = "red";
+          e.target.nextElementSibling.innerHTML = message;
+        }
+      }
+
+      // 생성한 경고함수 각 input별 연결
+      userId.addEventListener("input", function (e) {
+        valueCheck(
+          e,
+          userIdCheck(),
+          "첫글자는 반드시 영문자로, 그리고 영문자, 숫자 포함하여 총 4~12자로 입력하시오."
+        );
+      });
+      userPwd.addEventListener("input", function (e) {
+        valueCheck(
+          e,
+          userPwdCheck(),
+          "영문자, 숫자, 특수문자 포함하여 총 8~15자로 입력하시오."
+        );
+      });
+      email.addEventListener("input", function (e) {
+        valueCheck(e, emailCheck(), "이메일 형식에 맞춰서 입력하시오.");
+      });
+
+      // 입력값 확인해 제어하는 함수
+      function validate() {
+        if (!userIdCheck()) {
+          alert("아이디 확인");
+          userId.focus();
+          return false;
+        } else if (!userPwdCheck()) {
+          alert("비밀번호 확인");
+          userPwd.focus();
+          return false;
+        } else if (!emailCheck()) {
+          alert("이메일 확인");
+          email.focus();
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>
