@@ -87,5 +87,37 @@ $("#textarea1").on({
 // 동적으로 글자 수 세기
 // 백스페이스 키 코드 : 8
 $("#textarea2").keyup((e) => {
-  console.log(`keyup - e.key : ${e.key}, e.keyCode : ${e.keyCode}`);
+  let target = $(e.target);
+  let currentLength = $(e.target).val().length;
+  let maxLength = parseInt($("#maxLength").text());
+  console.log(maxLength);
+  if (currentLength > maxLength) {
+    target.val(target.val().substr(0, maxLength));
+  } else {
+    $("#counter").text(currentLength);
+  }
+});
+
+// 동적으로 id조건 확인
+const regexp = /^[a-z][a-z0-9]{3,11}$/;
+$("#userID").keyup((e) => {
+  let input = $(e.target).val(); // 제이쿼리 방식
+  input = e.target.value; // 자바스크립트 방식
+  if (regexp.test(input)) {
+    $("#idCheck").text("사용 가능한 id입니다").css("color", "green");
+  } else if (input === "") {
+    $("#idCheck").text("");
+  } else {
+    $("#idCheck").text("사용 불가능한 id입니다").css("color", "red");
+  }
+});
+
+// 3. triger() 메서드
+$("#area3").click(() => {
+  let counter = $("#counter2");
+  let currentCount = parseInt(counter.text());
+  counter.text(++currentCount);
+});
+$("#btn").click(() => {
+  $("#area3").trigger("click");
 });
