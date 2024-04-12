@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./asset/style.scss";
+import style from "./asset/style.module.css";
+import styled from "styled-components";
 
-function App() {
+const Div = styled.div`
+  background-color: darkcyan;
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* 인라인 스타일 방식 */}
+      <div /*style={{ backgroundColor: "black", color: "white" }}*/
+        className="class" // 리액트에선 class가 아니라 className
+        /*id="id"*/
+      >
+        <h1 className={style.deco}>Hello, React Styling!</h1>
+      </div>
+    </>
   );
-}
+};
 
 export default App;
