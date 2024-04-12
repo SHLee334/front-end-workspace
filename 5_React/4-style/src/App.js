@@ -4,6 +4,8 @@ import styled from "styled-components";
 
 const Div = styled.div`
   background-color: darkcyan;
+  color: white;
+  font-size: 6rem;
 `;
 
 const App = () => {
@@ -16,6 +18,7 @@ const App = () => {
       >
         <h1 className={style.deco}>Hello, React Styling!</h1>
       </div>
+      <Div>Styled Components!!</Div>
     </>
   );
 };
