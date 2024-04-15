@@ -16,3 +16,12 @@ export const addAnimal = async (data) => {
 export const delAnimal = async (no) => {
   return await instance.delete("animal/" + no);
 };
+
+// 1개 보여주기 - getAnimal
+export const getAnimal = async (no) => {
+  return await instance.get("animal/" + no);
+};
+// 수정하기 - updateAnimal (Requestbody)
+export const updateAnimal = async (data) => {
+  return await instance.put("animal", data);
+};
