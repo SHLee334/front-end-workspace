@@ -1,9 +1,10 @@
-import { combineReducers } from "redux";
+import { configureStore } from "@reduxjs/toolkit";
 import counter from "./counter";
 
-const store = combineReducers({
-  // counter.js에서 export default 한거 연결
-  counter,
+const store = configureStore({
+  reducer: {
+    counter: counter.reducer,
+  },
 });
 
 export default store;
